@@ -88,7 +88,7 @@ class unitconvert():
             print(f"sonuç {sonuç[:sayaç+3]} feetdir")
         else:
             print("geçerli bir değer giriniz")
-    
+    @classmethod
     def başlat(self):
         while True:
             variable=input(
