@@ -1,12 +1,14 @@
 class unitconvert():
     def __init__(self):
         pass
+    @classmethod
     def girilendeger(self):
         try:
             girilendeger1=int(input("değeri giriniz\n"))
             return girilendeger1
         except ValueError:
             print("geçerli bir değer giriniz")
+    @classmethod
     def consıcaklık(self):
         deger=input("C/K 1 K/C 2 C/F3 F/C 4 F/K 5 K/F 6 ")
         if deger=="1":
@@ -45,6 +47,7 @@ class unitconvert():
             sayaç=len(str(int(sonuç)))
             sonuç=str(sonuç)
             print(f"sonuç {sonuç[:sayaç+3]} kelvindir")
+    @classmethod
     def conagırlık(self):
         deger=input("kg/lbs için 1 lbs/kg için 2 yi yazınız")
         if deger=="1":
@@ -59,6 +62,7 @@ class unitconvert():
             sayaç=len(str(int(sonuç)))
             sonuç=str(sonuç)
             print(f"sonuç {sonuç[:sayaç+3]} lbsdir")
+    @classmethod
     def conuzunluk(self):
         deger=input(
             "km/mil ise 1 mil/km ise 2 yi  metre/feet ise 3 feet/metre ise 4 ü seçiniz \n")
